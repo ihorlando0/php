@@ -4,29 +4,15 @@
 	<title></title>
 </head>
 <body>
-     <?php
-     echo 'Bonjour "ismael" le PHP <br/>';
-     ?>
-     
-     <?php
-      include("header.php");
-      ?>
-
-      <?php
-      include("menu.php");
-      ?>
-
-      <?php
-      include("footer.php");
-      ?>
-
-       <?php
-      include("variable.php");
-      ?>
-<br>
-<br>
-      <?php
-      include("math.php");
-      ?>
-</body>
+<p><?php
+     $var = 6;
+     echo $var;
+     $new_var = &$var;
+     echo $new_var;
+     $var = 7;
+     echo $var;
+     echo $new_var;
+?>
+</p>
+ </body>
 </html>
